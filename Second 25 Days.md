@@ -175,3 +175,65 @@ Namespaces are one honking great idea -- let's do more of those!
 ```python
 import this
 ```
+# Recursion in python
+Recursion is the process of defining something in terms of itself.
+
+## Python Recursive Function
+In Python, we know that a function can call other functions. It is even possible for the function to call itself. These types of construct are termed as recursive functions.
+## Example:
+```python
+def factorial(num): 
+    if (num == 1 or num == 0):
+        return 1
+    else:
+        return (num * factorial(num - 1)) 
+  
+# Driver Code 
+num = 7; 
+print("Number: ",num)
+print("Factorial: ",factorial(num))
+ ```
+
+## Output:
+```
+number:  7
+Factorial:  5040
+```
+# Python Sets
+Sets are unordered collection of data items. They store multiple items in a single variable. Set items are separated by commas and enclosed within curly brackets {}. Sets are unchangeable, meaning you cannot change items of the set once created. Sets do not contain duplicate items.
+
+
+
+#### Example:
+```python
+info = {"Carla", 19, False, 5.9, 19}
+print(info)
+```
+#### Output:
+```
+{False, 19, 5.9, 'Carla'}
+ ```
+
+Here we see that the items of set occur in random order and hence they cannot be accessed using index numbers. Also sets do not allow duplicate values.
+
+ **Quick Quiz:** Try to create an empty set. Check using the type() function whether the type of your variable is a set
+
+## Accessing set items:
+ 
+
+### Using a For loop
+You can access items of set using a for loop. 
+
+#### Example:
+```python
+info = {"Carla", 19, False, 5.9}
+for item in info:
+    print(item)
+  ```
+#### Output:
+```
+False
+Carla
+19
+5.9
+```
