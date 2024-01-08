@@ -343,7 +343,8 @@ print(cities3)
 ```python
 cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
 cities2 = {"Seoul", "Kabul", "Delhi"}
-print(cities.difference(cities2))
+cities.difference_update(cities2)
+print(cities)
 ```
 #### Output:
 ```
@@ -372,15 +373,15 @@ The issuperset() method checks if all the items of a particular set are present 
 #### Example:
 ```python
 cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
-cities2 = {"Seoul", "Kabul"}
+cities2 = {"Tokyo", "Kabul"}
 print(cities.issuperset(cities2))
-cities3 = {"Seoul", "Madrid","Kabul"}
+cities3 = {"Tokyo", "Madrid","Delhi"}
 print(cities.issuperset(cities3))
 ```
 #### Output:
 
 False\
-False
+True
 
 ## issubset():
 The issubset() method checks if all the items of the original set are present in the particular set. It returns True if all the items are present, else it returns False.
