@@ -363,9 +363,9 @@ cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
 print(cities.isdisjoint(cities2))
 ```
 #### Output:
-
+```
 False
-
+```
 
 ## issuperset():
 The issuperset() method checks if all the items of a particular set are present in the original set. It returns True if all the items are present, else it returns False.
@@ -379,10 +379,10 @@ cities3 = {"Tokyo", "Madrid","Delhi"}
 print(cities.issuperset(cities3))
 ```
 #### Output:
-
+```
 False\
 True
-
+```
 ## issubset():
 The issubset() method checks if all the items of the original set are present in the particular set. It returns True if all the items are present, else it returns False.
 
@@ -393,8 +393,9 @@ cities2 = {"Delhi", "Madrid"}
 print(cities2.issubset(cities))
 ```
 #### Output:
-
+```
 True
+```
 # add()
 If you want to add a single item to the set use the add() method.
 
@@ -405,9 +406,10 @@ cities.add("Helsinki")
 print(cities)
 ```
 #### Output:
-
+```
 {'Tokyo', 'Helsinki', 'Madrid', 'Berlin', 'Delhi'}
- 
+ ```
+
 ## update()
 If you want to add more than one item, simply create another set or any other iterable object(list, tuple, dictionary), and use the update() method to add it into the existing set.
 
@@ -419,9 +421,9 @@ cities.update(cities2)
 print(cities)
 ```
 #### Output:
-
+```
 {'Seoul', 'Berlin', 'Delhi', 'Tokyo', 'Warsaw', 'Helsinki', 'Madrid'}
- 
+``` 
 
  
 
@@ -435,9 +437,9 @@ cities.remove("Tokyo")
 print(cities)
 ```
 #### Output:
-
+```
 {'Delhi', 'Berlin', 'Madrid'}
- 
+``` 
 
  
 
@@ -450,9 +452,9 @@ cities.remove("Seoul")
 print(cities)
 ```
 #### Output:
-
+```
 KeyError: 'Seoul' 
-
+```
 # pop()
 This method removes the last item of the set but the catch is that we don’t know which item gets popped as sets are unordered. However, you can access the popped item if you assign the pop() method to a variable.
 
@@ -464,10 +466,10 @@ print(cities)
 print(item)
 ```
 #### Output:
-
+```
 {'Tokyo', 'Delhi', 'Berlin'}
 Madrid
- 
+```
 
 ## del
 del is not a method, rather it is a keyword which deletes the set entirely.
@@ -479,10 +481,10 @@ del cities
 print(cities)
 ```
 #### Output:
-
+```
 NameError: name 'cities' is not defined 
 We get an error because our entire set has been deleted and there is no variable called cities which contains a set.
-
+```
  
 
 What if we don’t want to delete the entire set, we just want to delete all items within that set?
@@ -499,9 +501,9 @@ cities.clear()
 print(cities)
 ```
 #### Output:
-
+```
 set()
- 
+```
 
 ## Check if item exists
 You can also check if an item exists in the set or not.
@@ -515,6 +517,6 @@ else:
     print("Carla is absent.")
   ```
 #### Output:
-
+```
 Carla is present.
-
+```
